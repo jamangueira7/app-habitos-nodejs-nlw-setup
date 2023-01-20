@@ -28,4 +28,31 @@ export async function appRoutes(app: FastifyInstance) {
     });
 
   });
+
+  app.get('/day', async (request) => {
+    const createHabitBody = z.object({
+      date: z.coerce.date(),
+    });
+
+    const { date } = createHabitBody.parse(request.query);
+
+    const weekDay = dayjs(date).get('day');
+
+    const possibleHabits = await prisma.habit.findMany({
+      where: {
+        created_at: {
+          lte: date,
+        },
+        weekDays: {
+          some: {
+            week_day: weekDay,
+          }
+        }
+      }
+    });
+
+    return {
+      possibleHabits
+    }
+  });
 }
