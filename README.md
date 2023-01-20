@@ -7,57 +7,38 @@
 
 <br>
 
-## Party Time
+## NLW Setup - Habit
 
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [Nodejs](https://nodejs.org/en/)
-- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
-- [MongoDB](https://www.mongodb.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [SQLite](https://www.sqlite.org/index.html)
 
 ## 💻 Projeto
 
-API em NodeJS para a criação e gerenciamento de festas.
+API em NodeJS para a criação e gerenciamento de Hábitos diarios.
 
-Evento do Ignite Lab na plataforma da [Matheus Battisti - Hora de Codar](https://www.youtube.com/watch?v=anMK76I2dUA)
 
 ## 🚀 Como Rodar
 
 - Clone o projeto.
 - Entre na pasta do projeto e rode npm install (pode usar yarn install de acordo com a sua configuração).
-- configura o banco de dados MongoDB no arquivo conn.js.
+- configurar o banco de dados SQLite com o comando: npx prisma migrate dev. Para gerar dados mocados rodar: npx prisma db seed.
 
-- npm run start:dev para rodar o projeto (localhost:3000).
+- npm run dev para rodar o projeto (localhost:3333).
 
 ## 👩🏿‍💻 Rotas
 
-- **`POST /service`**: Rota de criação de serviços
+- **`POST /habits`**: Rota de criação de hábitos
 
 Enviar:
 ```
 {
-    "name": "Algum serviço",
-    "description": "Alguma descrição",
-    "price": 1400,
-    "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ufmt.br%2Focs%2Findex.php%3Foption%3Dcom_phocagallery%26view%3Ddetail%26catid%3D1%3Agaleria-de-imagens-01%26id%3D3%3Aimagem-3-titulo-com-ate-45-caracteres%26tmpl%3Dcomponent%26Itemid%3D145%26lang%3Dpt-br&psig=AOvVaw2Roew2MRHFkoBHhbEmbiMt&ust=1674051508034000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIjf5_3lzvwCFQAAAAAdAAAAABAE"
-}
-```
-Retorna:
-```
-{
-    "response": {
-        "name": "Algum serviço",
-        "description": "Alguma descrição",
-        "price": 1400,
-        "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ufmt.br%2Focs%2Findex.php%3Foption%3Dcom_phocagallery%26view%3Ddetail%26catid%3D1%3Agaleria-de-imagens-01%26id%3D3%3Aimagem-3-titulo-com-ate-45-caracteres%26tmpl%3Dcomponent%26Itemid%3D145%26lang%3Dpt-br&psig=AOvVaw2Roew2MRHFkoBHhbEmbiMt&ust=1674051508034000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIjf5_3lzvwCFQAAAAAdAAAAABAE",
-        "_id": "63c6ae5990389e49bedc99b2",
-        "createdAt": "2023-01-17T14:19:05.542Z",
-        "updatedAt": "2023-01-17T14:19:05.542Z",
-        "__v": 0
-    },
-    "msg": "Serviço criado com sucesso!"
+    "title": "Exemplo de hábito",
+    "weekDays": [0, 2, 5]
 }
 ```
 
