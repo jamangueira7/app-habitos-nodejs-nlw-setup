@@ -42,11 +42,24 @@ Enviar:
 }
 ```
 
-- **`GET /service`**: Rota para retornar todos os serviços
+- **`GET /day?date=2023-01-16T03:00:00.000z`**: Rota para retornar habitos por dia
 
 Retorna:
 ```
-
+{
+    "possibleHabits": [
+        {
+            "id": "0730ffac-d039-4194-9571-01aa2aa0efbd",
+            "title": "Beber 2L água",
+            "created_at": "2022-12-31T06:00:00.000Z"
+        },
+        {
+            "id": "fa1a1bcf-3d87-4626-8c0d-d7fd1255ac00",
+            "title": "Dormir 8h",
+            "created_at": "2023-01-08T06:00:00.000Z"
+        }
+    ]
+}
 ```
 
 ## 🤔 Como contribuir
