@@ -64,6 +64,32 @@ Retorna:
 
 - **`PATCH /habit/:id/toggle`**: Rota para marcar ou desmarca como finalizado um hábito
 
+- **`GET /summary`**: Rota para retornar um resumo dos habitos.
+
+```
+[
+    {
+        "id": "3b3f4272-b37c-4e9e-8ee7-65346f659dc3",
+        "date": "2023-01-02T03:00:00.000Z",
+        "completed": 1
+    },
+    {
+        "id": "14694a3b-81c4-421d-a4c1-ac9f0cbf24f1",
+        "date": "2023-01-06T03:00:00.000Z",
+        "completed": 1
+    },
+    {
+        "id": "6b704a24-91de-4329-9246-660f89e10edd",
+        "date": "2023-01-04T03:00:00.000Z",
+        "completed": 2
+    },
+    {
+        "id": "e2cbb639-a904-4a40-b133-0db40e76e1d7",
+        "date": "2023-01-24T03:00:00.000Z",
+        "completed": 2
+    }
+]
+```
 
 ## 🤔 Como contribuir
 
