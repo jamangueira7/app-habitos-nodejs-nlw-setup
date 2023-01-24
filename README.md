@@ -62,6 +62,9 @@ Retorna:
 }
 ```
 
+- **`PATCH /habit/:id/toggle`**: Rota para marcar ou desmarca como finalizado um hábito
+
+
 ## 🤔 Como contribuir
 
 - Faça um fork desse repositório;
