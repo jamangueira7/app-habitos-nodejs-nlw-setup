@@ -58,7 +58,8 @@ Retorna:
             "title": "Dormir 8h",
             "created_at": "2023-01-08T06:00:00.000Z"
         }
-    ]
+    ],
+    "completedHabits": []
 }
 ```
 
