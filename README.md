@@ -16,6 +16,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Nodejs](https://nodejs.org/en/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [SQLite](https://www.sqlite.org/index.html)
+- [Prisma](https://www.prisma.io/docs)
 
 ## 💻 Projeto
 
