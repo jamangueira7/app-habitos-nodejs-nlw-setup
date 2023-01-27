@@ -30,6 +30,11 @@ API em NodeJS para a criação e gerenciamento de Hábitos diarios.
 
 - npm run dev para rodar o projeto (localhost:3333).
 
+Frontend do projeto:
+
+- [Web](https://github.com/jamangueira7/app-habitos-react-nlw-setup)
+- [Mobile](https://github.com/jamangueira7/app-habitos-react-native-nlw-setup)
+
 ## 👩🏿‍💻 Rotas
 
 - **`POST /habits`**: Rota de criação de hábitos
