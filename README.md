@@ -27,6 +27,7 @@ API em NodeJS para a criação e gerenciamento de Hábitos diarios.
 
 - Clone o projeto.
 - Entre na pasta do projeto e rode npm install (pode usar yarn install de acordo com a sua configuração).
+- criar arquivo .env com DATABASE_URL="".
 - configurar o banco de dados SQLite com o comando: npx prisma migrate dev. Para gerar dados mocados rodar: npx prisma db seed.
 
 - npm run dev para rodar o projeto (localhost:3333).
